@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div(class="container-fluid")
+  
+    if (err)
+        div
+            h2(style = "color: red;")= err
+  
+    h3 Will redirect to:
+    code.
+        https://www.google.com/
